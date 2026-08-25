@@ -1,0 +1,35 @@
+{
+  "valid": true,
+  "invalid_reasons": [],
+  "warnings": [
+    "khong co su kien UNHEALTHY cho region-a trong health log -> health checker khong chay, hoac chi log region phu",
+    "khong co su kien 5_dns_cutover -> failover chay tay, khong tai lap duoc"
+  ],
+  "killed_region": "a",
+  "recovered_by_region": null,
+  "t_outage_iso": "2026-08-25T08:30:24",
+  "chaos_mode": "netblock",
+  "breakdown_seconds_from_t0": {
+    "user_thay_loi_dau_tien": 2.0,
+    "health_check_phat_hien": null,
+    "dns_cutover": null,
+    "request_thanh_cong_dau_tien": null
+  },
+  "health_check_config": {
+    "interval_s": null,
+    "threshold": null,
+    "detect_floor_s": null
+  },
+  "rto_measured_s": null,
+  "rto_target_s": 300.0,
+  "rto_verdict": "NO_RECOVERY",
+  "rpo_at_restore_s": null,
+  "docs_lost": null,
+  "requests_failed": 15,
+  "evidence": {
+    "loadgen": "reports/drill-1-nodr.jsonl",
+    "chaos": "chaos/chaos-events.jsonl",
+    "health": "reports/health-events.jsonl",
+    "failover": "reports/failover-events.jsonl"
+  }
+}

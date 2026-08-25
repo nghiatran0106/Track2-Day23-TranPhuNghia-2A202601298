@@ -1,0 +1,32 @@
+{
+  "valid": true,
+  "invalid_reasons": [],
+  "warnings": [],
+  "killed_region": "a",
+  "recovered_by_region": "b",
+  "t_outage_iso": "2026-08-25T08:33:36",
+  "chaos_mode": "netblock",
+  "breakdown_seconds_from_t0": {
+    "user_thay_loi_dau_tien": 0.0,
+    "health_check_phat_hien": 15.0,
+    "dns_cutover": 21.9,
+    "request_thanh_cong_dau_tien": 22.6
+  },
+  "health_check_config": {
+    "interval_s": 5.0,
+    "threshold": 3,
+    "detect_floor_s": 15.0
+  },
+  "rto_measured_s": 22.6,
+  "rto_target_s": 300.0,
+  "rto_verdict": "PASS",
+  "rpo_at_restore_s": 4.0,
+  "docs_lost": 2,
+  "requests_failed": 11,
+  "evidence": {
+    "loadgen": "reports/drill-2-withdr.jsonl",
+    "chaos": "chaos/chaos-events.jsonl",
+    "health": "reports/health-events.jsonl",
+    "failover": "reports/failover-events.jsonl"
+  }
+}
